@@ -19,7 +19,7 @@ function numsteps_putmarkers!(robot, side)
 end
 
 function along!(robot, side, num_steps)
-    for _i in 1:num_steps
+    for i in 1:num_steps
         move!(robot,side)
         move!(robot,next(side))
     end
